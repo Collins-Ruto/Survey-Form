@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="survey.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<main class="container">
+		<header class="header">
+			<figure id="logo">
+				<img src="https://www.pikpng.com/pngl/b/409-4090568_pgld-en032-b-logo-design-png-clipart.png" class="logo" alt="Bevax logo">
+			</figure>
+			<h1 id="title">Bevax International Bank</h1>
+			<p id="description">Please complete our service survey for our branches for future improvements. Thank you for your time.</p>
+		</header>
+		<form id="survey-form">
+			<div class="form-value">
+				<label id="name-label">Your Name</label>
+				<input type="text" name="name" id="name" class="form-input" placeholder="Enter Full Names" required>
+			</div>
+			<div class="form-value">
+				<label id="email-label">Email Address</label>
+				<input type="email" name="email" id="email" class="form-input" placeholder="Enter an Email" required>
+			</div class="form-value">
+			<div>
+				<label id="number-label">Period of being our Client?</label>
+				<input type="number" name="year" id="number" class="form-input" placeholder="Years" min="1" max="100">
+			</div>
+			<div class="form-value" id="dropdown" class="dropdown">
+				<p>Please choose your preffered city branch.</p>
+				<select class="form-input" required>
+					<option disabled selected>Select your brach</option>
+					<option value="addis">Addis Ababa, Ethiopia</option>
+					<option value="brussels">Brussels, Belgium</option>
+					<option value="brasilia">Brasilia, Brazil</option>
+					<option value="cairo">Cairo, Egypt</option>
+					<option value="dublin">Dublin, Ireland</option>
+					<option value="helinski">Helinski, Finland</option>
+					<option value="jakarta">Jakarta, Indonesia</option>
+					<option value="kiev">Kiev, Ukraine</option>
+					<option value="london">London, Britain</option>
+					<option value="nairobi">Nairobi, Kenya</option>
+				</select>
+			</div>
+			<div class="form-value" id="dropdown2" class="dropdown">
+				<p>What is your preffered services at the bank?</p>
+				<select class="form-input" required>
+					<option disabled selected >Select an option</option>
+					<option value="savings">Savings account</option>
+					<option value="loans">Financial Loans</option>
+					<option value="credit">Credit services</option>
+					<option value="commerce">Commercial account</option>
+					<option value="staff">Staff Member</option>
+					<option value="online">Online banking</option>
+				</select>
+			</div>
+			<div class="form-value">
+				<p>How do you feel about the services rendered?</p>
+				<label>
+					<input type="radio" name="feelings" value="exellent" class="feeling-radio" checked> Exellent
+				</label>
+				<label>
+					<input type="radio" name="feelings" value="good" class="feeling-radio"> Very good
+				</label>
+				<label>
+					<input type="radio" name="feelings" value="standard" class="feeling-radio"> Sub-standard
+				</label>
+				<label>
+					<input type="radio" name="feelings" value="bad" class="feeling-radio"> Not good
+				</label>
+			</div>
+			<div class="form-value" id="checkbox" class="checkbox">
+				<p>What would you like us to improve on or add to our services?</p>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="hours">Increase our operating hours
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="security">Increase Security
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="rates">Lower bank rates
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="mobile">Add online and mobile banking
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="kid-savings">Add kids savings account
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="ceiling">Increase loan ceilings
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="trans-time">Lower transaction time
+				</label>
+				<label>
+					<input class="checkboxes" type="checkbox" name="improve-check" value="bank-staff">Increase bank staff
+				</label>
+			</div>
+			<div class="form-value">
+				<p>Aditional info, suggestions or recomendations</p>
+				<textarea id="comment" class="comments" name="comment" placeholder="Enter Your comments "></textarea>
+			</div>
+			<div class="form-value">
+				<button id="submit" type="submit">Submit</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
